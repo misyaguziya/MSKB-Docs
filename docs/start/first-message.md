@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: はじめての送信
-description: 日本語を打って、VRChat のチャットボックスへ送るまでです。
+description: 日本語を打って送るまで
 ---
 
 # はじめての送信

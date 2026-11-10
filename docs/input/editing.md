@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 title: 編集する
-description: カーソル移動、選択、コピー・貼り付け、全消去、改行、送った文の呼び出しです。
+description: カーソル、選択、コピー、改行など
 ---
 
 # 編集する

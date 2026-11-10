@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: 日本語（フリック）
-description: スマートフォンと同じ並びで、かなを打ちます。
+description: スマートフォンと同じ並びで打つ
 ---
 
 # 日本語（フリック）

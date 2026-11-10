@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 title: 記号・絵文字・定型文
-description: 記号のページの使い方と、定型文の登録です。
+description: 記号ページと定型文の登録
 ---
 
 # 記号・絵文字・定型文

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: 日本語（ローマ字）
-description: ローマ字で打って、漢字に変換します。
+description: ローマ字で打って変換する
 ---
 
 # 日本語（ローマ字）

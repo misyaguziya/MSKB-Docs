@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: English・한국어・中文
-description: 英語、韓国語、中国語（拼音・注音・倉頡・速成）の打ち方です。
+description: 英語・韓国語・中国語の打ち方
 ---
 
 # English・한국어・中文

@@ -1,12 +1,14 @@
-/* MSKB 本体のアクセント (src-ui の --primary_500 / --primary_300) に揃える */
+/* MSKB 本体のアクセント (src-ui の --primary 系) に揃える。
+   ライトは白地で本文の基準 (4.5:1) を満たすよう暗め (#2b6f63 は約 5.9:1) */
 :root {
-  --ifm-color-primary: #3b9483;
-  --ifm-color-primary-dark: #358576;
-  --ifm-color-primary-darker: #327e70;
-  --ifm-color-primary-darkest: #29685c;
-  --ifm-color-primary-light: #41a390;
-  --ifm-color-primary-lighter: #44aa96;
-  --ifm-color-primary-lightest: #4fbca7;
+  --ifm-color-primary: #2b6f63;
+  --ifm-color-primary-dark: #27645a;
+  --ifm-color-primary-darker: #255e54;
+  --ifm-color-primary-darkest: #1e4d45;
+  --ifm-color-primary-light: #2f7a6d;
+  --ifm-color-primary-lighter: #317f71;
+  --ifm-color-primary-lightest: #36897a;
+  --mskb-shot-bg: #1e1f22;
 }
 
 [data-theme='dark'] {
@@ -19,10 +21,79 @@
   --ifm-color-primary-lightest: #93ccc3;
 }
 
-/* スクリーンショット: 角を丸め、明るい背景でも境目が分かるように縁を付ける */
+/* スクリーンショット: 角を丸め、縁を付ける。読み込み中も白い枠にならないよう画面と同じ暗い背景 */
 .markdown img {
   display: block;
   border-radius: 8px;
   border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--mskb-shot-bg);
   margin: 0.5rem 0 1.25rem;
+}
+
+/* 表は本文の幅いっぱいに揃える */
+.markdown table {
+  display: table;
+  width: 100%;
+}
+
+/* 版のバッジ: 見出しより目立たないよう、縁だけにする */
+.theme-doc-version-badge {
+  background: transparent;
+  color: var(--ifm-color-emphasis-700);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-weight: 500;
+}
+
+/* トップ: 入口のボタンと目的別のカード */
+.home-lead {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+}
+
+.home-actions .button {
+  flex: 1 1 12rem;
+  max-width: 18rem;
+}
+
+[data-theme='dark'] .home-actions .button--primary {
+  color: #10221f;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.home-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  color: inherit;
+}
+
+.home-card:hover {
+  border-color: var(--ifm-color-primary);
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-card strong {
+  display: block;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.home-card span {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
 }

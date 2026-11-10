@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 title: 音声入力
-description: マイクで話した内容を文字にします。
+description: 話した内容を文字にする
 ---
 
 # 音声入力

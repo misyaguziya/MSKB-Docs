@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: インストールと起動
-description: ダウンロードからインストール、初回の準備、VRChat の OSC の設定までです。
+description: ダウンロードから初回の準備まで
 ---
 
 # インストールと起動

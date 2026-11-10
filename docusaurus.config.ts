@@ -35,18 +35,29 @@ const config: Config = {
     ],
   ],
 
+  // 画像を押すと拡大 (スマホでキーの字を読めるように)
+  plugins: ['docusaurus-plugin-image-zoom'],
+  clientModules: ['./src/clientModules/openImageOnPhone.js'],
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {hashed: true, language: ['ja'], docsRouteBasePath: '/', indexBlog: false, indexPages: false},
+    ],
+  ],
+
   themeConfig: {
     colorMode: {respectPrefersColorScheme: true},
+    zoom: {
+      selector: '.markdown img',
+      background: {light: 'rgba(255, 255, 255, 0.96)', dark: 'rgba(24, 24, 27, 0.96)'},
+    },
+    // ページ間の移動はサイドバーに任せ、上は検索とサイトの外へのリンクだけ。
+    // 版の選択は 2 つ目の版を出すときに {type: 'docsVersionDropdown'} を足す
     navbar: {
       title: 'MSKB',
       logo: {alt: 'MSKB', src: 'img/icon.png'},
       items: [
-        {to: '/start', label: 'はじめに', position: 'left'},
-        {to: '/input', label: '入力', position: 'left'},
-        {to: '/send', label: '送る', position: 'left'},
-        {to: '/settings', label: '設定', position: 'left'},
-        {to: '/faq', label: 'FAQ', position: 'left'},
-        {type: 'docsVersionDropdown', position: 'right'},
+        {type: 'search', position: 'right'},
         {href: 'https://misyaguziya.booth.pm/items/9093442', label: 'ダウンロード', position: 'right'},
         {href: 'https://github.com/misyaguziya/MSKB-Docs/issues', label: '不具合・要望', position: 'right'},
       ],
