@@ -1,0 +1,28 @@
+/* MSKB 本体のアクセント (src-ui の --primary_500 / --primary_300) に揃える */
+:root {
+  --ifm-color-primary: #3b9483;
+  --ifm-color-primary-dark: #358576;
+  --ifm-color-primary-darker: #327e70;
+  --ifm-color-primary-darkest: #29685c;
+  --ifm-color-primary-light: #41a390;
+  --ifm-color-primary-lighter: #44aa96;
+  --ifm-color-primary-lightest: #4fbca7;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #61b4a7;
+  --ifm-color-primary-dark: #4ea99b;
+  --ifm-color-primary-darker: #4aa093;
+  --ifm-color-primary-darkest: #3d8479;
+  --ifm-color-primary-light: #74bdb2;
+  --ifm-color-primary-lighter: #7bc1b6;
+  --ifm-color-primary-lightest: #93ccc3;
+}
+
+/* スクリーンショット: 角を丸め、明るい背景でも境目が分かるように縁を付ける */
+.markdown img {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0.5rem 0 1.25rem;
+}

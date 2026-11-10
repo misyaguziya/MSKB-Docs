@@ -1,0 +1,9 @@
+{
+  "label": "文字を入力する",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/input",
+    "description": "言語ごとの打ち方、編集、記号・絵文字・定型文、音声入力です。言語は 🌐 キーで切り替えます。"
+  }
+}
