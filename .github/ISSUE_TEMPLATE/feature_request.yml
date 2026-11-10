@@ -1,16 +1,16 @@
-name: 要望
-description: MSKB にほしい機能や、変えてほしいところ
+name: 要望 / Feature request
+description: MSKB にほしい機能や、変えてほしいところ / Something you'd like MSKB to do or change
 labels: [enhancement]
 body:
   - type: textarea
     id: want
     attributes:
-      label: してほしいこと
-      description: どんな場面で、何ができると助かるかを書いてください。
+      label: してほしいこと / What you'd like
+      description: どんな場面で、何ができると助かるか / When, and what would help
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: MSKB のバージョン（任意）
+      label: MSKB のバージョン（任意） / MSKB version (optional)
       placeholder: v1.0.0

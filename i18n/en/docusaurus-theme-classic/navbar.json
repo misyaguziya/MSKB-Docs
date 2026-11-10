@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "MSKB",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "MSKB",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.ダウンロード": {
+    "message": "Download",
+    "description": "Navbar item with label ダウンロード"
+  },
+  "item.label.不具合・要望": {
+    "message": "Bugs & requests",
+    "description": "Navbar item with label 不具合・要望"
+  }
+}

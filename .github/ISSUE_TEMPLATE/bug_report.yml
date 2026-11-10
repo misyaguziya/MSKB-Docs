@@ -1,5 +1,5 @@
-name: 不具合の報告
-description: MSKB が思ったとおりに動かないとき
+name: 不具合の報告 / Bug report
+description: MSKB が思ったとおりに動かないとき / When MSKB doesn't work as expected
 labels: [bug]
 body:
   - type: markdown
@@ -7,26 +7,29 @@ body:
       value: |
         先に [FAQ](https://misyaguziya.github.io/MSKB-Docs/faq) で同じ症状がないか確認してください。
         ここは公開の場所です。ユーザー名やメールアドレスなど、個人の情報は書かないでください。
+
+        Please check the [FAQ](https://misyaguziya.github.io/MSKB-Docs/en/faq) first. English is fine.
+        This is a public place. Don't include personal information such as your user name or email address.
   - type: input
     id: version
     attributes:
-      label: MSKB のバージョン
-      description: PC の設定画面の左下に出ています。
+      label: MSKB のバージョン / MSKB version
+      description: PC の設定画面の左下 / Bottom left of the PC settings window
       placeholder: v1.0.0
     validations:
       required: true
   - type: input
     id: device
     attributes:
-      label: 使っている VR 機器
-      placeholder: 例：Valve Index、Quest 3（Virtual Desktop）
+      label: 使っている VR 機器 / VR headset
+      placeholder: 例 / e.g. Valve Index, Quest 3 (Virtual Desktop)
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: 行った操作
-      description: 起きるまでの操作を順に書いてください。
+      label: 行った操作 / Steps
+      description: 起きるまでの操作を順に / What you did, in order
       placeholder: |
         1. キーボードを開く
         2. 日本語を選んで入力する
@@ -36,14 +39,14 @@ body:
   - type: textarea
     id: actual
     attributes:
-      label: 起きたことと、期待していたこと
+      label: 起きたことと、期待していたこと / What happened, and what you expected
     validations:
       required: true
   - type: textarea
     id: log
     attributes:
-      label: エラーのログ（任意）
+      label: エラーのログ（任意） / Error log (optional)
       description: |
-        設定画面の「困ったとき」→「エラーのログ」の「コピー」で写したものを貼ってください。
-        ユーザー名を含むファイルの場所が出ることがあるので、その部分は消してから貼ってください。
+        設定画面の「困ったとき」→「エラーのログ」の「コピー」で写したものを貼ってください。ユーザー名の部分は消してください。
+        Paste what "Troubleshooting" → "Error log" → "Copy" copies. Remove your user name from it.
       render: text

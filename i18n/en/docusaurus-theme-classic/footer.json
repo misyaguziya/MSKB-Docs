@@ -1,0 +1,54 @@
+{
+  "link.title.ドキュメント": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=ドキュメント in the footer"
+  },
+  "link.title.サポート": {
+    "message": "Support",
+    "description": "The title of the footer links column with title=サポート in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.はじめに": {
+    "message": "Getting started",
+    "description": "The label of footer link with label=はじめに linking to /start"
+  },
+  "link.item.label.文字を入力する": {
+    "message": "Typing",
+    "description": "The label of footer link with label=文字を入力する linking to /input"
+  },
+  "link.item.label.送る": {
+    "message": "Sending",
+    "description": "The label of footer link with label=送る linking to /send"
+  },
+  "link.item.label.好みに合わせる": {
+    "message": "Customizing",
+    "description": "The label of footer link with label=好みに合わせる linking to /customize"
+  },
+  "link.item.label.設定の一覧": {
+    "message": "Settings",
+    "description": "The label of footer link with label=設定の一覧 linking to /settings"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=FAQ linking to /faq"
+  },
+  "link.item.label.ダウンロード (BOOTH)": {
+    "message": "Download (BOOTH)",
+    "description": "The label of footer link with label=ダウンロード (BOOTH) linking to https://misyaguziya.booth.pm/items/9093442"
+  },
+  "link.item.label.不具合・要望 (GitHub Issues)": {
+    "message": "Bugs & requests (GitHub Issues)",
+    "description": "The label of footer link with label=不具合・要望 (GitHub Issues) linking to https://github.com/misyaguziya/MSKB-Docs/issues"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "The label of footer link with label=X linking to https://x.com/misya_ai"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 m's software. Do not reproduce or reuse the text or images on this site without permission.",
+    "description": "The footer copyright"
+  }
+}

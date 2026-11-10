@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "1.0.0",
+    "description": "The label for version current"
+  },
+  "sidebar.Sidebar.category.はじめに": {
+    "message": "Getting started",
+    "description": "The label for category 'はじめに' in sidebar 'Sidebar'"
+  },
+  "sidebar.Sidebar.category.はじめに.link.generated-index.description": {
+    "message": "From installing MSKB to sending your first message to VRChat. Follow the pages in order.",
+    "description": "The generated-index page description for category 'はじめに' in sidebar 'Sidebar'"
+  },
+  "sidebar.Sidebar.category.文字を入力する": {
+    "message": "Typing",
+    "description": "The label for category '文字を入力する' in sidebar 'Sidebar'"
+  },
+  "sidebar.Sidebar.category.文字を入力する.link.generated-index.description": {
+    "message": "How to type in each language, editing, symbols, emoji and phrases, and voice input. Switch languages with the 🌐 key.",
+    "description": "The generated-index page description for category '文字を入力する' in sidebar 'Sidebar'"
+  },
+  "sidebar.Sidebar.category.設定の一覧": {
+    "message": "Settings",
+    "description": "The label for category '設定の一覧' in sidebar 'Sidebar'"
+  },
+  "sidebar.Sidebar.category.設定の一覧.link.generated-index.description": {
+    "message": "Settings are in two places. Both change the same settings.",
+    "description": "The generated-index page description for category '設定の一覧' in sidebar 'Sidebar'"
+  }
+}

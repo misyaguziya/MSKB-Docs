@@ -13,8 +13,12 @@ const config: Config = {
   projectName: 'MSKB-Docs',
   onBrokenLinks: 'throw',
 
-  // ponytail: 日本語のみ。英語などは i18n の locales を足して i18n/<locale>/ に訳を置く
-  i18n: {defaultLocale: 'ja', locales: ['ja']},
+  // 日本語が元。英語は i18n/en/ に訳と英語の画面の画像を置く (`npm run write-translations -- --locale en` で文言の雛形)
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en'],
+    localeConfigs: {ja: {label: '日本語', htmlLang: 'ja'}, en: {label: 'English', htmlLang: 'en'}},
+  },
 
   presets: [
     [
@@ -41,7 +45,7 @@ const config: Config = {
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
-      {hashed: true, language: ['ja'], docsRouteBasePath: '/', indexBlog: false, indexPages: false},
+      {hashed: true, language: ['ja', 'en'], docsRouteBasePath: '/', indexBlog: false, indexPages: false},
     ],
   ],
 
@@ -58,6 +62,7 @@ const config: Config = {
       logo: {alt: 'MSKB', src: 'img/icon.png'},
       items: [
         {type: 'search', position: 'right'},
+        {type: 'localeDropdown', position: 'right'},
         {href: 'https://misyaguziya.booth.pm/items/9093442', label: 'ダウンロード', position: 'right'},
         {href: 'https://github.com/misyaguziya/MSKB-Docs/issues', label: '不具合・要望', position: 'right'},
       ],
