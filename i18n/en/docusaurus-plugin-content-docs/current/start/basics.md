@@ -4,7 +4,13 @@ title: The basics
 description: Controller actions and the parts of the keyboard
 ---
 
+import YouTube from '@site/src/components/YouTube';
+
 # The basics
+
+A video on how to use MSKB. You can see the actions on this page in the video too.
+
+<YouTube id="MDC7kWS27nE" title="MSKB v1.0.0 how to use" start={8} />
 
 ## Using the controllers
 

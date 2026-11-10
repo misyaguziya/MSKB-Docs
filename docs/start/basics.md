@@ -4,7 +4,13 @@ title: 基本の操作
 description: コントローラーとキーの名前
 ---
 
+import YouTube from '@site/src/components/YouTube';
+
 # 基本の操作
+
+使い方の動画です。このページの操作を動画でも確かめられます。
+
+<YouTube id="MDC7kWS27nE" title="MSKB -多言語対応VRキーボード- v1.0.0 使用方法" start={8} />
 
 ## コントローラーで操作する
 
