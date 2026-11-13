@@ -62,13 +62,14 @@ const config: Config = {
       background: {light: 'rgba(255, 255, 255, 0.96)', dark: 'rgba(24, 24, 27, 0.96)'},
     },
     // ページ間の移動はサイドバーに任せ、上はブログと検索とサイトの外へのリンクだけ。
-    // 版の選択は 2 つ目の版を出すときに {type: 'docsVersionDropdown'} を足す
+    // 版の選択 (前の版のドキュメントは versioned_docs/ に残してあり、ここから辿れる)
     navbar: {
       title: 'MSKB',
       logo: {alt: 'MSKB', src: 'img/icon.png'},
       items: [
         {to: '/blog', label: 'ブログ', position: 'left'},
         {type: 'search', position: 'right'},
+        {type: 'docsVersionDropdown', position: 'right'},
         {type: 'localeDropdown', position: 'right'},
         {href: 'https://misyaguziya.booth.pm/items/9093442', label: 'ダウンロード', position: 'right'},
         {href: 'https://github.com/misyaguziya/MSKB-Docs/issues', label: '不具合・要望', position: 'right'},

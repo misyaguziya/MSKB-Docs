@@ -1,0 +1,9 @@
+{
+  "label": "はじめに",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/start",
+    "description": "インストールから、最初の文を VRChat へ送るまでです。上から順に進めてください。"
+  }
+}
