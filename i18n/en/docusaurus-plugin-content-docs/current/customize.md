@@ -76,22 +76,39 @@ Press the keys on the sample keyboard in the PC settings window to try the looks
 |---|---|---|
 | Key sound | Plays a sound when you press a key | PC, VR |
 | Tap in the hand on a key | Vibrates the controller when you press a key | PC, VR |
-| Key sounds | Choose the sound for each key | PC |
+| Volume | The volume shared by all keys (up to 200%) | PC |
+| Preset | Choose a set of key sounds | PC, VR |
+| Sound for each key | In a custom preset, choose the sound for each key | PC |
 
 Key sounds play from the Windows default playback device. If you can't hear them in your headset, see the [FAQ](./faq.md#no-key-sound-in-headset).
 
+### Key sound presets {#key-sound-presets}
+
+Choose one with "Preset" under "Input & sound" → "Sound & haptics" in the PC settings window, or with "Input & sound" → "Key sound preset" in the VR gear.
+
+![The sound and haptics settings](./img/settings-input-sounds.png)
+
+| Preset | Sound |
+|---|---|
+| Preset 1 — Typing | An ordinary keyboard's typing sound |
+| Preset 2 — Mechanical | A mechanical keyboard's sound. Space, Enter, Backspace and 半/全 sound mechanical too |
+| Custom | Presets you made (up to 32) |
+
+The two standard presets can't be changed. To make your own, in the PC settings window:
+
+1. Choose the preset to start from, and press "Create custom preset".
+2. Give it a name and press "Save and use". The copy is then selected.
+3. Changes to a custom preset are saved as you make them.
+
+While a custom preset is selected, you can rename it (pencil), delete it (trash can), or "Save as".
+
 ### Choosing a sound for each key {#key-sounds}
 
-Change these under "Input & sound" → "Key sounds" in the PC settings window.
-
-![The key sound settings](./img/settings-input-sounds.png)
+With a custom preset selected, change these under "Input & sound" in the PC settings window.
 
 1. On the sample keyboard, press the key you want to change. The language key switches the layout, and #+= opens the symbol page.
 2. Choose a sound from the "Selected key" list. Press ▶ to listen.
-3. "Volume" is shared by all keys (up to 200%).
 
-"All key sounds" → "Restore defaults" puts every key's sound back to the default.
-
-- **Random**: keys set to "Random" play one of the highlighted sounds under "Sounds used at random". Press a sound to add or remove it.
-- **Import sounds**: add your own sounds (WAV, MP3 or Ogg, up to 512 KB and 3 seconds).
+- **Random**: keys set to "Random", and keys with no default sound, play one of the highlighted sounds under "Sounds used at random". Press a sound to add or remove it.
+- **Import sounds**: add your own sounds (WAV, MP3 or Ogg, up to 512 KB and 3 seconds). Imported sounds can be used in any custom preset.
 - The characters on the symbol page (symbols, emoji, kaomoji, phrases) share one setting.

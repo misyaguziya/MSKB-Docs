@@ -7,7 +7,9 @@ description: Settings you can change in VR
 # VR gear
 
 Press the gear at the top right of the keyboard (③ in [the parts](../start/basics.md#parts)), and the settings open over the keyboard.
-Switch tabs on the left, and press "Close" to go back. Only settings that make sense to change in VR are here, and they are the same settings as in the [PC settings window](./pc.md).
+Switch tabs on the left, and press "Close" to go back. Only settings that make sense to change in VR are here, and they are the same settings as in the [PC settings window](./pc.md). The tabs also have the same names and order as there.
+
+A setting with ⌄ on the right opens its list of choices in place. When the list is long, point at it and push the stick up or down: only the list scrolls.
 
 ## General
 
@@ -30,7 +32,13 @@ Change the language and the keyboard at startup (last / show / hide).
 
 ![Input & sound in the VR gear](../img/vr-settings-input.png)
 
-Change flick behavior, the microphone for voice input, the key sound, and vibration on key press.
+| Setting | What it does |
+|---|---|
+| Japanese conversion | What converts Japanese (see [Japanese](../input/japanese.md#japanese-conversion)). Shown only when the PC has a Japanese input method |
+| Flick: tapping a key again goes to its next kana | How [flick input](../input/flick.md) behaves |
+| Microphone | The microphone for voice input |
+| Key sound / Tap in the hand on a key | Sound and vibration on or off |
+| Key sound preset | A set of key sounds (see [Customizing](../customize.md#key-sound-presets)). Custom presets made on the PC are listed too |
 
 ## Design
 

@@ -31,7 +31,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           lastVersion: 'current',
-          versions: {current: {label: '1.0.0', path: '', badge: true}},
+          versions: {current: {label: '1.0.1', path: '', badge: true}},
         },
         // 版ごとの変更点 (MSKB の設定画面の「変更点」から開く)。新しい版は blog/ と i18n/en/docusaurus-plugin-content-blog/ に同じ名前で書き、
         // static/latest.json の version を上げる (BOOTH に上げてから。MSKB はこの版を見て更新を知らせる)
