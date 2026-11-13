@@ -14,5 +14,9 @@
   "item.label.不具合・要望": {
     "message": "Bugs & requests",
     "description": "Navbar item with label 不具合・要望"
+  },
+  "item.label.ブログ": {
+    "message": "Blog",
+    "description": "Navbar item with label ブログ"
   }
 }

@@ -47,6 +47,10 @@
     "message": "X",
     "description": "The label of footer link with label=X linking to https://x.com/misya_ai"
   },
+  "link.item.label.ブログ (変更点)": {
+    "message": "Blog (what's new)",
+    "description": "The label of footer link with label=ブログ (変更点) linking to /blog"
+  },
   "copyright": {
     "message": "Copyright © 2026 m's software. Do not reproduce or reuse the text or images on this site without permission.",
     "description": "The footer copyright"
