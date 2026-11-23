@@ -13,7 +13,7 @@ To go back to the letter keys, press the key in the same place (it shows the lan
 
 | Tab | Contents |
 |---|---|
-| Recent | Symbols you entered recently (cleared when MSKB restarts) |
+| Recent | Symbols and emoji you entered recently (kept after MSKB restarts; up to 22, newest first) |
 | Symbols | Basic symbols, Japanese punctuation, Chinese and Korean marks |
 | Brackets | Brackets (both sides are entered, with the cursor between them) |
 | Shapes | ☆ ○ ◇ □ △ ♪ ♡ and more |

@@ -22,9 +22,9 @@ Settings marked ○ in the "VR" column can also be changed with the VR gear. Bot
 | Language | The language of the settings window and the keyboard | ○ |
 | Keyboard at startup | Keep the last state / Show it / Hide it | ○ |
 | Start with SteamVR / Quit with SteamVR | Starts and quits MSKB along with SteamVR | |
-| Check for updates at startup | Tells you when a new version is out (on by default; see [New version notice](#update-notice)) | |
 | Closing goes to the system tray | The window's "×" goes to the tray instead of quitting (off by default) | |
 | Start in the system tray | Doesn't show the settings window at startup | |
+| Check for updates at startup | Tells you when a new version is out (on by default; see [New version notice](#update-notice)) | |
 
 ### New version notice {#update-notice}
 
