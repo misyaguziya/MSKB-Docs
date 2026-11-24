@@ -1,0 +1,111 @@
+name: 不具合の報告
+description: MSKB が思ったとおりに動かないとき（日本語）
+labels: [bug, "lang:ja", needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        先に [FAQ](https://misyaguziya.github.io/MSKB-Docs/faq) で同じ症状がないか確認してください。
+
+        **ここは公開の場所です。** Windows のユーザー名、Steam や VRChat の名前、ユーザー名を含むフォルダーのパス、
+        メールアドレス、BOOTH の注文番号は書かないでください。キーボードで打った文章が写り込んでいないかも確認してください。
+        ログやスクリーンショットに写っていたら、消してから添付してください。
+        脆弱性（セキュリティ上の問題）はここに書かず、[非公開で報告](https://github.com/misyaguziya/MSKB-Docs/security/advisories/new)してください。
+
+        対応環境：Windows PC、SteamVR、PC 版 VRChat（Quest 単体では使えません）。
+  - type: input
+    id: version
+    attributes:
+      label: MSKB のバージョン
+      description: PC の設定画面の左下
+      placeholder: v1.0.2
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows 11
+        - Windows 10
+        - その他（対応外です）
+    validations:
+      required: true
+  - type: input
+    id: steamvr
+    attributes:
+      label: SteamVR のバージョン
+      description: 分かる範囲で
+  - type: input
+    id: device
+    attributes:
+      label: 使っている VR 機器とつなぎ方
+      description: ヘッドセットとコントローラー、PC との接続方法
+      placeholder: 例 Valve Index、Quest 3（Virtual Desktop）
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: どこで起きたか
+      description: 近いものを選んでください。迷ったら「その他・分からない」で構いません。
+      options:
+        - 日本語の入力・変換
+        - 中国語・韓国語・英語の入力
+        - 音声入力
+        - 記号・絵文字・定型文
+        - VRChat への送信（チャットボックス・入力欄）
+        - ポインター・手首のボタン・操作
+        - 設定画面
+        - インストール・起動・終了
+        - その他・分からない
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 行った操作
+      description: 起きるまでの操作を順に
+      placeholder: |
+        1. 手首のボタンでキーボードを開く
+        2. 日本語を選んで入力する
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際に起きたこと
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 起きる頻度
+      options:
+        - 毎回
+        - 時々
+        - 1 回だけ
+        - 分からない
+  - type: textarea
+    id: attachments
+    attributes:
+      label: ログ・スクリーンショット（任意）
+      description: |
+        長いログは本文に貼らず、ファイルをこの欄にドラッグして添付してください。
+        ログは、設定画面の「困ったとき」→「エラーのログ」の「コピー」で写せます。メモ帳に貼って、txt で保存してから添付してください。
+        添付する前に、ユーザー名やパスが入っていないか確認してください。
+        設定フォルダーの `process.log` には打った文章が残るので、添付しないでください。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 個人情報の確認
+      options:
+        - label: Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号、打った私的な文章などを、本文と添付ファイルから消しました。
+          required: true

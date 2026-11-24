@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使い方・FAQ（日本語）
+    url: https://misyaguziya.github.io/MSKB-Docs/faq
+    about: 先にここで同じ症状や使い方がないか確認してください。
+  - name: User guide and FAQ (English)
+    url: https://misyaguziya.github.io/MSKB-Docs/en/faq
+    about: Please check here first for a known fix or how-to.
+  - name: セキュリティ上の問題の報告 / Report a security issue
+    url: https://github.com/misyaguziya/MSKB-Docs/security/advisories/new
+    about: 公開の Issue には書かず、ここから非公開で送ってください。 / Do not post it as a public issue. Send it privately here.

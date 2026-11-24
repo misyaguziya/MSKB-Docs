@@ -1,0 +1,45 @@
+name: 要望
+description: MSKB にほしい機能や、変えてほしいところ（日本語）
+labels: [enhancement, "lang:ja", needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **ここは公開の場所です。** Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号などの個人情報は書かないでください。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 困っていること・使う場面
+      description: ほしい機能より先に、どんな場面で何に困っているかを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: want
+    attributes:
+      label: こうなってほしい
+      description: 思いついた形があれば。なければ空欄で構いません。
+  - type: textarea
+    id: workaround
+    attributes:
+      label: 今のやり方・代わりの方法
+      description: 今はどうしているか。ほかの入力方法や設定で代用していれば、それも。
+  - type: dropdown
+    id: priority
+    attributes:
+      label: どのくらい困っているか（任意）
+      options:
+        - あると便利
+        - ないと不便
+        - ないと使えない
+  - type: input
+    id: version
+    attributes:
+      label: MSKB のバージョン（任意）
+      placeholder: v1.0.2
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 個人情報の確認
+      options:
+        - label: Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号などの個人情報を、本文から消しました。
+          required: true

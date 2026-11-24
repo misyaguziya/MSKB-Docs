@@ -1,0 +1,111 @@
+name: Bug report
+description: When MSKB doesn't work as expected (English)
+labels: [bug, "lang:en", needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the [FAQ](https://misyaguziya.github.io/MSKB-Docs/en/faq) first.
+
+        **This is a public place.** Don't include your Windows user name, your Steam or VRChat name, folder paths that contain your user name,
+        your email address, or your BOOTH order number. Also check that no text you typed with the keyboard shows in a screenshot.
+        If any of them appear in a log or screenshot, remove them before attaching it.
+        Don't post a security vulnerability here. [Report it privately](https://github.com/misyaguziya/MSKB-Docs/security/advisories/new) instead.
+
+        Supported: a Windows PC, SteamVR, and VRChat for PC (a standalone Quest is not supported).
+  - type: input
+    id: version
+    attributes:
+      label: MSKB version
+      description: Bottom left of the PC settings window
+      placeholder: v1.0.2
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows 11
+        - Windows 10
+        - Other (not supported)
+    validations:
+      required: true
+  - type: input
+    id: steamvr
+    attributes:
+      label: SteamVR version
+      description: If you know it
+  - type: input
+    id: device
+    attributes:
+      label: VR headset and how it is connected
+      description: Headset and controllers, and how they connect to your PC
+      placeholder: e.g. Valve Index, Quest 3 (Virtual Desktop)
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where it happens
+      description: Pick the closest one. If you are not sure, "Other / not sure" is fine.
+      options:
+        - Typing and converting Japanese
+        - Typing Chinese, Korean or English
+        - Voice input
+        - Symbols, emoji and phrases
+        - Sending to VRChat (chatbox or input field)
+        - Pointer, wrist button and controls
+        - Settings window
+        - Install, start and quit
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: What you did, in order
+      placeholder: |
+        1. Open the keyboard with the wrist button
+        2. Choose Japanese and type
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often it happens
+      options:
+        - Every time
+        - Sometimes
+        - Only once
+        - I don't know
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Logs and screenshots (optional)
+      description: |
+        Don't paste a long log here. Drag the file into this box to attach it.
+        "Troubleshooting" → "Error log" → "Copy" in the settings window copies the log. Paste it into Notepad, save it as a txt file, and attach that.
+        Before attaching, check that it contains no user name or path.
+        Don't attach `process.log` from the settings folder: it keeps what you typed.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal information, such as my Windows user name, my Steam or VRChat name, full paths, my BOOTH order number and private text I typed, from the text and the attachments.
+          required: true

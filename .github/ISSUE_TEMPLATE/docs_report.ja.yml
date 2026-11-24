@@ -1,0 +1,41 @@
+name: ドキュメントの誤り
+description: ユーザーガイドの間違い・分かりにくいところ（日本語）
+labels: [documentation, "lang:ja", needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **ここは公開の場所です。** Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号などの個人情報は書かないでください。
+        スクリーンショットを添えるときも、写り込みを消してください。
+  - type: input
+    id: page
+    attributes:
+      label: 該当のページ・箇所
+      description: ページの URL か、見出しの名前
+      placeholder: https://misyaguziya.github.io/MSKB-Docs/faq
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題の内容
+      description: 間違っているところ、実際の画面や動作と違うところ、分かりにくいところ
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 直し方の案（任意）
+  - type: input
+    id: version
+    attributes:
+      label: MSKB のバージョン（任意）
+      description: 画面や動作との食い違いのとき
+      placeholder: v1.0.2
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 個人情報の確認
+      options:
+        - label: Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号などの個人情報を、本文と添付ファイルから消しました。
+          required: true
